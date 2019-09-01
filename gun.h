@@ -26,7 +26,7 @@ public:
 
     int gun_position_y;
     char input;
-    vector<int> bullet_position_x, bullet_position_y;
+    vector<pair<int, int>> bullet_position;
 
     void update();
     void get_input();

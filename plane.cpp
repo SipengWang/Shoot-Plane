@@ -4,8 +4,7 @@ using namespace std;
 
 Plane::Plane()
 {
-    plane_position_x = {MAP_LENGTH};
-    plane_position_y = {MAP_HEIGHT / 2};
+
     count = 0;
 }
 
@@ -17,11 +16,10 @@ void Plane::update()
 
         new_plane_position_y = rand() % MAP_HEIGHT;
 
-        plane_position_x.push_back(MAP_LENGTH);
-        plane_position_y.push_back(new_plane_position_y);
+        plane_position.push_back(make_pair(MAP_LENGTH, new_plane_position_y));
 
-        for(int i = 0; i < plane_position_x.size(); i++)
-        plane_position_x[i] --;
+        for(int i = 0; i < plane_position.size(); i++)
+        plane_position[i].first --;
     }
 
     count ++;

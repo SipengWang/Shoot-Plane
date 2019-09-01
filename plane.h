@@ -12,7 +12,8 @@ class Plane
 public:
     Plane();
 
-    vector<int> plane_position_x, plane_position_y;
+    vector<pair<int, int>> plane_position;
+
     void update(void);
     int level;
 private:

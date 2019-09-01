@@ -56,12 +56,12 @@ void Gun::update()
 
     if(input == ' ')
     {
-        bullet_position_x.push_back(0);
-        bullet_position_y.push_back(gun_position_y);
+
+        bullet_position.push_back(make_pair(0, gun_position_y));
     }
 
-    for(int i = 0; i < bullet_position_x.size(); i++)
-    bullet_position_x[i] += 1;
+    for(int i = 0; i < bullet_position.size(); i++)
+    bullet_position[i].first += 1;
 
     input = 'p';
     

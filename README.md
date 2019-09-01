@@ -9,4 +9,4 @@ Navigate to the folder and input the following commands<br>
 # How to play
 Use W and S to move the gun. Use SPACE to shoot<br>
 
-By [Wangsipeng]()# shoot-plane
+By [Wangsipeng](https://github.com/SipengWang)
